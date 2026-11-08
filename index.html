@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Epic Stack Holdings LLC</title>
+  <meta name="description" content="Epic Stack Holdings LLC builds and operates software and digital media businesses from Seattle, Washington.">
+  <meta name="theme-color" content="#14171c">
+  <meta property="og:title" content="Epic Stack Holdings LLC">
+  <meta property="og:description" content="We build and operate software and digital media businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://epicstackholdings.com/">
+  <link rel="canonical" href="https://epicstackholdings.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314171c'/%3E%3Crect x='8' y='9' width='16' height='3.2' rx='1.6' fill='%23e8a54b'/%3E%3Crect x='8' y='14.4' width='16' height='3.2' rx='1.6' fill='%23f3efe6'/%3E%3Crect x='8' y='19.8' width='16' height='3.2' rx='1.6' fill='%23f3efe6' opacity='.55'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --surface: #fffdf8;
+      --ink: #14171c;
+      --muted: #5c6168;
+      --line: #e2ddd1;
+      --accent: #b8741a;
+      --accent-soft: #f3e3c8;
+      --radius: 14px;
+      --max: 980px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111317;
+        --surface: #181b20;
+        --ink: #f1ede4;
+        --muted: #a2a6ad;
+        --line: #2a2e35;
+        --accent: #e8a54b;
+        --accent-soft: #2e2618;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header { padding: 28px 0; }
+    .brand {
+      display: inline-flex; align-items: center; gap: 12px;
+      text-decoration: none; font-weight: 650; letter-spacing: -0.01em;
+    }
+    .mark { width: 30px; height: 30px; flex: none; }
+
+    /* Hero */
+    .hero { padding: 72px 0 64px; border-bottom: 1px solid var(--line); }
+    .eyebrow {
+      display: inline-block; font-size: 13px; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 58px); line-height: 1.06;
+      letter-spacing: -0.03em; font-weight: 700; margin: 0 0 22px; max-width: 14ch;
+    }
+    .lede { font-size: clamp(18px, 2.2vw, 21px); color: var(--muted); max-width: 46ch; margin: 0; }
+
+    /* Brands */
+    section.brands { padding: 64px 0; }
+    h2 {
+      font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 24px;
+    }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 26px; display: flex; flex-direction: column; gap: 8px; min-height: 176px;
+      text-decoration: none; transition: border-color .15s ease, transform .15s ease;
+    }
+    a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    a.card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .card h3 { font-size: 21px; letter-spacing: -0.015em; margin: 0; }
+    .card p { margin: 0; color: var(--muted); font-size: 16px; }
+    .meta {
+      margin-top: auto; padding-top: 14px; display: flex; align-items: center;
+      justify-content: space-between; gap: 12px; font-size: 14px;
+    }
+    .domain { color: var(--muted); }
+    .status {
+      font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
+      background: var(--accent-soft); color: var(--accent); white-space: nowrap;
+    }
+
+    /* Contact */
+    section.contact { padding: 8px 0 72px; }
+    .contact-box {
+      border-top: 1px solid var(--line); padding-top: 40px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    }
+    .contact-box p { margin: 0; color: var(--muted); }
+    .contact-box a { color: var(--ink); font-weight: 600; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 14px; color: var(--muted); }
+
+    @media (max-width: 720px) {
+      .hero { padding: 40px 0 44px; }
+      .grid, .contact-box { grid-template-columns: 1fr; }
+      .card { min-height: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { .card { transition: none; } a.card:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Epic Stack Holdings home">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="7" fill="currentColor"/>
+          <rect x="8" y="9" width="16" height="3.2" rx="1.6" fill="#e8a54b"/>
+          <rect x="8" y="14.4" width="16" height="3.2" rx="1.6" fill="var(--bg)"/>
+          <rect x="8" y="19.8" width="16" height="3.2" rx="1.6" fill="var(--bg)" opacity=".55"/>
+        </svg>
+        Epic Stack Holdings
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Seattle, Washington</span>
+        <h1>We build and run focused digital businesses.</h1>
+        <p class="lede">Epic Stack Holdings LLC is the parent company for a small portfolio of software consulting and digital media brands, each built to do one thing well.</p>
+      </div>
+    </section>
+
+    <section class="brands" aria-labelledby="brands-title">
+      <div class="wrap">
+        <h2 id="brands-title">Our brands</h2>
+        <div class="grid">
+
+          <div class="card">
+            <h3>Basemap Studio</h3>
+            <p>ArcGIS and React web applications for utilities, municipalities and the teams that run them.</p>
+            <div class="meta"><span class="domain">basemap.studio</span><span class="status">Consulting</span></div>
+          </div>
+
+          <a class="card" href="https://silverpawspets.com/">
+            <h3>Silver Paws Pets</h3>
+            <p>Thoughtfully chosen products for the pets who share our homes, and the people who care for them.</p>
+            <div class="meta"><span class="domain">silverpawspets.com</span><span class="status">Site live</span></div>
+          </a>
+
+          <a class="card" href="https://www.ruralhomeguide.com/">
+            <h3>Rural Home Guide</h3>
+            <p>Practical, plain-spoken guidance for buying, running and enjoying a home outside the city.</p>
+            <div class="meta"><span class="domain">ruralhomeguide.com</span><span class="status">Site live</span></div>
+          </a>
+
+          <div class="card">
+            <h3>Pet Epic Tales</h3>
+            <p>Personalized illustrated storybooks that make your pet the hero of their own adventure.</p>
+            <div class="meta"><span class="domain">In development</span><span class="status">Coming soon</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-box">
+          <div>
+            <h2 id="contact-title">Contact</h2>
+            <p>For partnerships, vendor inquiries and general questions:</p>
+          </div>
+          <div>
+            <p><a href="mailto:fernando@epicstackholdings.com">fernando@epicstackholdings.com</a></p>
+            <!-- Add the business phone here once it's set up, e.g.:
+            <p><a href="tel:+12065550100">(206) 555-0100</a></p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y">2026</span> Epic Stack Holdings LLC · Washington, USA</div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
